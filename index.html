@@ -1,0 +1,377 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Electric Vehicle Market Analysis</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tableau Embedding API -->
+    <script type="module"
+        src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js">
+    </script>
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION BAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            EV <span>Market Analysis</span>
+        </div>
+
+        <nav>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#dashboard1" class="nav-link">Dashboard 1</a>
+            <a href="#dashboard2" class="nav-link">Dashboard 2</a>
+            <a href="#story" class="nav-link">Story</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">
+                DATA VISUALIZATION PROJECT
+            </p>
+
+            <h1>
+                Electric Vehicle
+                Market Analysis
+            </h1>
+
+            <p class="hero-description">
+                Explore electric vehicle sales, market performance,
+                battery technology, customer ratings and manufacturing
+                trends through interactive Tableau visualizations.
+            </p>
+
+            <a href="#dashboard1" class="main-button">
+                Explore Dashboard
+            </a>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="car-icon">
+                ⚡🚗
+            </div>
+
+            <h2>
+                EV Market Insights
+            </h2>
+
+            <p>
+                Interactive analysis of the electric vehicle market
+                using Tableau dashboards and story visualizations.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECT OVERVIEW ================= -->
+
+    <section class="section about">
+
+        <p class="section-label">
+            PROJECT OVERVIEW
+        </p>
+
+        <h2>
+            Understanding the EV Market
+        </h2>
+
+        <p>
+            This project analyzes the electric vehicle market using
+            data visualization. The Tableau dashboards provide
+            insights into EV sales, manufacturers, categories,
+            battery technologies, customer ratings and manufacturing
+            countries.
+        </p>
+
+
+        <div class="info-cards">
+
+            <div class="info-card">
+
+                <h3>
+                    EV Sales
+                </h3>
+
+                <p>
+                    Analyze annual EV sales and understand market
+                    performance across different vehicle categories.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>
+                    Market Analysis
+                </h3>
+
+                <p>
+                    Explore manufacturers, battery technologies,
+                    customer ratings and EV market distribution.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>
+                    EV Story
+                </h3>
+
+                <p>
+                    Follow the Tableau story to understand the
+                    major findings through multiple visual scenes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DASHBOARD 1 ================= -->
+
+    <section id="dashboard1"
+             class="section visualization-section">
+
+        <p class="section-label">
+            TABLEAU DASHBOARD
+        </p>
+
+        <h2>
+            Dashboard 1 — EV Sales and Market Overview
+        </h2>
+
+        <p class="section-description">
+
+            This dashboard presents an overview of electric vehicle
+            market performance, sales and category-level insights.
+
+        </p>
+
+
+        <div class="tableau-container">
+
+            <tableau-viz
+
+                id="tableauDashboard1"
+
+                src="https://public.tableau.com/views/dashboard1_17931098336450/Dashboard1"
+
+                toolbar="bottom"
+
+                hide-tabs
+
+                width="100%"
+
+                height="750">
+
+            </tableau-viz>
+
+        </div>
+
+
+        <a
+
+            href="https://public.tableau.com/views/dashboard1_17931098336450/Dashboard1"
+
+            target="_blank"
+
+            class="view-button">
+
+            Open Dashboard 1 Separately
+
+        </a>
+
+    </section>
+
+
+    <!-- ================= DASHBOARD 2 ================= -->
+
+    <section id="dashboard2"
+             class="section visualization-section alternate">
+
+        <p class="section-label">
+            TABLEAU DASHBOARD
+        </p>
+
+        <h2>
+            Dashboard 2 — EV Market Analysis
+        </h2>
+
+        <p class="section-description">
+
+            Explore battery technology, manufacturing countries,
+            EV sales trends and other market insights.
+
+        </p>
+
+
+        <div class="tableau-container">
+
+            <tableau-viz
+
+                id="tableauDashboard2"
+
+                src="https://public.tableau.com/views/dashboard2_17931117135720/Dashboard2"
+
+                toolbar="bottom"
+
+                hide-tabs
+
+                width="100%"
+
+                height="750">
+
+            </tableau-viz>
+
+        </div>
+
+
+        <a
+
+            href="https://public.tableau.com/views/dashboard2_17931117135720/Dashboard2"
+
+            target="_blank"
+
+            class="view-button">
+
+            Open Dashboard 2 Separately
+
+        </a>
+
+    </section>
+
+
+    <!-- ================= STORY ================= -->
+
+    <section id="story"
+             class="section visualization-section">
+
+        <p class="section-label">
+            TABLEAU STORY
+        </p>
+
+        <h2>
+            Story — Electric Vehicle Market Insights
+        </h2>
+
+        <p class="section-description">
+
+            Explore the four Tableau story scenes created for
+            the Electric Vehicle Market Analysis project.
+
+        </p>
+
+
+        <div class="tableau-container story-container">
+
+            <tableau-viz
+
+                id="tableauStory"
+
+                src="https://public.tableau.com/views/story1_17931118939100/Story1"
+
+                toolbar="bottom"
+
+                hide-tabs
+
+                width="100%"
+
+                height="850">
+
+            </tableau-viz>
+
+        </div>
+
+
+        <a
+
+            href="https://public.tableau.com/views/story1_17931118939100/Story1"
+
+            target="_blank"
+
+            class="view-button">
+
+            Open Story Separately
+
+        </a>
+
+    </section>
+
+
+    <!-- ================= CONCLUSION ================= -->
+
+    <section class="section conclusion">
+
+        <p class="section-label">
+            CONCLUSION
+        </p>
+
+        <h2>
+            Electric Vehicle Market Outlook
+        </h2>
+
+        <p>
+
+            The project provides an interactive view of the electric
+            vehicle market using Tableau visualizations. The dashboards
+            and story help users explore EV sales, manufacturers,
+            categories, battery technologies, customer ratings and
+            manufacturing distribution.
+
+        </p>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Electric Vehicle Market Analysis
+        </p>
+
+        <p>
+            Data Visualization Project
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
